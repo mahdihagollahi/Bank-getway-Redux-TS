@@ -1,16 +1,16 @@
 
-import React, { useState, useContext } from "react";
+import  { useState, useContext } from "react";
 import { IoCard } from "react-icons/io5";
 import { FaRegEdit } from "react-icons/fa";
 import { useSelector } from 'react-redux';
 import { ProfileContext } from "../Componnent/EveryThing";
-
+import { RootState } from "../Redux/store"
 export default function Card() {
-  const selectedCard = useSelector((state) => state.card.selectedCard);
+  const selectedCard = useSelector((state:RootState) => state.card.selectedCard);
   const { imgBank, handelNegetive } = useContext(ProfileContext);
   const [cartCash, setcartCash] = useState("");
 
-  const disableNumberDefult = (e) => {
+  const disableNumberDefult = (e:React.ChangeEvent<HTMLInputElement>) => {
     const newValue = e.target.value;
     if (/^\d*$/.test(newValue)) { 
       setcartCash(newValue);
