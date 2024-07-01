@@ -1,42 +1,39 @@
-import  {  createContext,FC, ReactNode } from "react";
+import {  createContext ,FC } from "react";
 import { Route, Routes } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import Transaction from "../Screen/Transaction";
 import History from "../Screen/History";
-import InputCard from "./AddCart";
+import InputCard from "../Screen/AddCart";
 import Card from "./Card";
 import Navbar from "./Navbar";
 import { setImageCart, resetImageBank } from "../Redux/bankSlice";
 import { negetiveInventory , setCardDetails } from '../Redux/cardSlice';
 import { RootState } from "../Redux/store";
 
-interface User {
-  handelNegetive:(negetivePrice:number , id:string)=>void
-  bankImage:(e:React.ChangeEvent<HTMLInputElement>)=>void
-  imgBank:string
-}
+export const ProfileContext = createContext<any>(null);
 
-export const ProfileContext = createContext<ProfileContextType |undefined>(undefined);
-const ProfileContext:FC<{children:ReactNode}> = ({children})=>{
-
+const EveryThing:FC = ()=> {
+  
+  
+ 
 
   const dispatch = useDispatch();
 
   const imgBank = useSelector((state:RootState) => state.Bank.ImgBank);
-  const { list } = useSelector((state:RootState) => state.card);
-  const {historyList} = useSelector((state => state.card.historyList))
+  const { list ,historyList } = useSelector((state:RootState) => state.card);
+ 
 
-  const SelectCard = (card) => {
+  const SelectCard = (card:any) => {
     dispatch(setCardDetails(card));
     console.log(SelectCard)
   };
 
 
-  const handelNegetive = (negetivePrice:number , id:number) => {
+  const handelNegetive = (negetivePrice:number , id:string) => {
     dispatch(negetiveInventory({negetivePrice , id}))
   }
  
-  const bankImage = (e) => {
+  const bankImage = (e:React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.slice(0, 4);
     console.log("Bank code:", value);
     switch (value) {
@@ -65,13 +62,13 @@ const ProfileContext:FC<{children:ReactNode}> = ({children})=>{
         dispatch(setImageCart("src/assets/Img/Shahr.png"));
         break;
 
-      case "5029":
-        dispatch(setImageCart("src/assets/Img/Taavon.png"));
-        break;
+      // case "5029":
+      //   dispatch(setImageCart("src/assets/Img/Taavon.png"));
+      //   break;
 
-      case "5029":
-        dispatch(setImageCart("src/assets/Img/Karafarin-Bank-logo.png.webp"));
-        break;
+      // case "5029":
+      //   dispatch(setImageCart("src/assets/Img/Karafarin-Bank-logo.png.webp"));
+      //   break;
 
       case "5054":
         dispatch(setImageCart("src/assets/Img/gardeshgari.png"));
@@ -93,17 +90,17 @@ const ProfileContext:FC<{children:ReactNode}> = ({children})=>{
         dispatch(setImageCart("src/assets/Img/Refah.png"));
         break;
 
-      case "6037":
-        dispatch(setImageCart("src/assets/Img/Keshvarzi.png"));
-        break;
+      // case "6037":
+      //   dispatch(setImageCart("src/assets/Img/Keshvarzi.png"));
+      //   break;
 
       case "6392":
         dispatch(setImageCart("src/assets/Img/Keshvarzi.png"));
         break;
 
-      case "6037":
-        dispatch(setImageCart("src/assets/Img/Meli.png"));
-        break;
+      // case "6037":
+      //   dispatch(setImageCart("src/assets/Img/Meli.png"));
+      //   break;
 
       case "6063":
         dispatch(setImageCart("src/assets/Img/Mehr.png"));
@@ -186,21 +183,15 @@ const ProfileContext:FC<{children:ReactNode}> = ({children})=>{
         break;
     }
   };
-  return (
-    <ProfileContext.Provider value={{ handelNegetive, bankImage, imgBank }}>
-      {children}
-    </ProfileContext.Provider>
-  );
-}
 
-function EveryThing() {
-  
-  
- 
-
-  
   return (
-    
+    <ProfileContext.Provider
+      value={{
+        handelNegetive,
+        bankImage,
+        imgBank,
+      }}
+    >
       <div>
         <Navbar />
 
