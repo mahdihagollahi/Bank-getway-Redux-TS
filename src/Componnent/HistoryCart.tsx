@@ -10,7 +10,7 @@ export default function HistoryCard({Number,
     
 
 <div className="pt-1">
-                <p class="font-light">Card Number</p>
+                <p className="font-light">Card Number</p>
                 <p className="font-medium tracking-more-wider">{Number}</p>
               </div>
 

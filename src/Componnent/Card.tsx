@@ -1,28 +1,9 @@
 
 
-
-// components/Card.js
-import React from 'react';
-// import { useDispatch } from 'react-redux';
-// import { addCard } from '../Redux/cardSlice';
-
 export default function Card({
   name, Number, Password, Cvv2, Year, Month, Inventory, imgBank , SelectCard
 }) {
-  // const dispatch = useDispatch();
-
-  // const handleAddCard = () => {
-  //   dispatch(addCard({
-  //     nameCard: name,
-  //     numberCard: Number,
-  //     passwordCard: Password,
-  //     cvv2Card: Cvv2,
-  //     yearCard: Year,
-  //     monthCard: Month,
-  //     inventory: Inventory,
-  //     imgBank: imgBank,
-  //   }));
-  // };
+  
   
 
   return (
