@@ -4,7 +4,6 @@
 
 ![Logo](https://github.com/mahdihagollahi/Bank-getway-Redux-TS/blob/master/src/assets/Img/logoProject.png)
 
-![Commit Badge](https://img.shields.io/github/commit-activity/y/mahdihagollahi/sandoghProject)
 
 - 💵 Transfer money easily and simply
 - 💳 Can store different cards
@@ -43,7 +42,4 @@ cd BankGetWay-Redux
 ## Authors
 
 - [mahdihaghollahi](https://github.com/mahdihagollahi)
-- [developersamari](https://github.com/developersamari)
-- [HosseinShabab](https://github.com/HosseinShabab)
-- [ajnimaa](https://github.com/ajnimaa)
-- [Alibabooo1384](https://github.com/Alibabooo1384)
+
