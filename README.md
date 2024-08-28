@@ -16,7 +16,7 @@
 
 > First, clone the project
 
-````bash
+`````bash
   git clone https://github.com/mahdihagollahi/BankGetWay-Redux.git
 
 > to run sandoghProject with npm
