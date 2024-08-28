@@ -18,10 +18,10 @@
 
 `````bash
   git clone https://github.com/mahdihagollahi/BankGetWay-Redux.git
-
+`````
 > to run sandoghProject with npm
 
-```bash
+`````bash
     cd BankGetWay-Redux
   npm install
   npm run dev
