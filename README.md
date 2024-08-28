@@ -1,30 +1,50 @@
-# React + TypeScript + Vite
+# Bank Get Way with redux
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Bank portal page to pay and save card with redux and type extract with vite
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+![Logo](https://github.com/mahdihagollahi/sandoghProject/blob/developer/src/app/assent/Img/userPanel/Logo.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+![Commit Badge](https://img.shields.io/github/commit-activity/y/mahdihagollahi/sandoghProject)
 
-- Configure the top-level `parserOptions` property like this:
+- 💵 You will receive the amount quickly
+- 💳 The money is deposited in the account card
+  <!-- - ⚖️ This project is legal -->
+  <!-- - 🪪 -->
+  <!-- - 🔑 -->
+  <!-- - 🔒 -->
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Installation
+
+> First, clone the project
+
+```bash
+  git clone https://github.com/mahdihagollahi/sandoghProject.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+> to run sandoghProject with npm
+
+```bash
+cd sandoghProject
+  npm install
+  npm run dev
+```
+
+## Screenshots
+
+![App Screenshot](https://github.com/mahdihagollahi/sandoghProject/blob/developer/src/app/assent/Img/userPanel/User/payment%20receipt.svg)
+
+![Commit Badge](https://github.com/mahdihagollahi/sandoghProject/blob/developer/src/app/assent/Img/adminPanel/Admin%20Dashboard.svg)
+
+## Support
+
+> For support, email haghollahimahdi@gmail.com or join our Slack channel.
+
+## Authors
+
+- [mahdihaghollahi](https://github.com/mahdihagollahi)
+- [developersamari](https://github.com/developersamari)
+- [HosseinShabab](https://github.com/HosseinShabab)
+- [ajnimaa](https://github.com/ajnimaa)
+- [Alibabooo1384](https://github.com/Alibabooo1384)
