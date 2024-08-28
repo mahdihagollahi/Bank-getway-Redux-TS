@@ -8,8 +8,8 @@
 
 ![Commit Badge](https://img.shields.io/github/commit-activity/y/mahdihagollahi/sandoghProject)
 
-- 💵 You will receive the amount quickly
-- 💳 The money is deposited in the account card
+- 💵 Transfer money easily and simply
+- 💳 Can store different cards
   <!-- - ⚖️ This project is legal -->
   <!-- - 🪪 -->
   <!-- - 🔑 -->
@@ -20,13 +20,12 @@
 > First, clone the project
 
 ```bash
-  git clone https://github.com/mahdihagollahi/sandoghProject.git
-```
+  git clone https://github.com/mahdihagollahi/BankGetWay-Redux.git
 
 > to run sandoghProject with npm
 
 ```bash
-cd sandoghProject
+cd BankGetWay-Redux
   npm install
   npm run dev
 ```
