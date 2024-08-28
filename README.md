@@ -25,7 +25,7 @@
 cd BankGetWay-Redux
   npm install
   npm run dev
-````
+```
 
 ## Screenshots
 
