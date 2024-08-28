@@ -2,9 +2,7 @@
 
 > Bank portal page to pay and save card with redux and type extract with vite
 
-
-
-![Logo](https://github.com/mahdihagollahi/sandoghProject/blob/developer/src/app/assent/Img/userPanel/Logo.png)
+![Logo](https://github.com/mahdihagollahi/Bank-getway-Redux-TS/blob/master/src/assets/Img/logoProject.png)
 
 ![Commit Badge](https://img.shields.io/github/commit-activity/y/mahdihagollahi/sandoghProject)
 
@@ -19,7 +17,7 @@
 
 > First, clone the project
 
-```bash
+````bash
   git clone https://github.com/mahdihagollahi/BankGetWay-Redux.git
 
 > to run sandoghProject with npm
@@ -28,13 +26,15 @@
 cd BankGetWay-Redux
   npm install
   npm run dev
-```
+````
 
 ## Screenshots
 
-![App Screenshot](https://github.com/mahdihagollahi/sandoghProject/blob/developer/src/app/assent/Img/userPanel/User/payment%20receipt.svg)
+![App Screenshot](https://github.com/mahdihagollahi/BankGetWay-Redux/blob/master/src/assets/Img/Screen.png)
 
-![Commit Badge](https://github.com/mahdihagollahi/sandoghProject/blob/developer/src/app/assent/Img/adminPanel/Admin%20Dashboard.svg)
+![Commit Badge](https://github.com/mahdihagollahi/BankGetWay-Redux/blob/master/src/assets/Img/Card2.png)
+
+![Commit Badge](https://github.com/mahdihagollahi/BankGetWay-Redux/blob/master/src/assets/Img/History.png)
 
 ## Support
 
