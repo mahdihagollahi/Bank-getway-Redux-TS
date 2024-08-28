@@ -22,10 +22,10 @@
 > to run sandoghProject with npm
 
 ```bash
-cd BankGetWay-Redux
+    cd BankGetWay-Redux
   npm install
   npm run dev
-```
+````
 
 ## Screenshots
 
